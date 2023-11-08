@@ -3,5 +3,7 @@ from webapp_python import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path("<int:weppapp_python_produtos_nome>/", views.results, name="results"),
+    path('produtos/', views.results, name="cadastrar_produtos"),
+    path('', views.sucess, name="sucess"),
+    path('consulta/', views.consulta, name="consulta"),
 ]

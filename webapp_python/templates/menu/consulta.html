@@ -1,0 +1,20 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th>Tipo</th>
+            <th>Fornecedor</th>
+            <th>Quantidade</th>
+        </tr>
+        {% for tabela in produtos %}
+        <tr>
+            <td>{{tabela.nome}}</td>
+            <td>{{tabela.valor}}</td>
+            <td>{{tabela.tipo}}</td>
+            <td>{{tabela.fornecedor}}</td>
+            <td>{{tabela.quantidade}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
